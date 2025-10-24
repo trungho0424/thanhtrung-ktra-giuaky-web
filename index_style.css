@@ -1,0 +1,86 @@
+/* Thiết lập cơ bản*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.portfolio-container {
+    display: flex; /* Kích hoạt Flexbox*/
+    height: 100vh
+}
+
+.portfolio-text {
+    width: 60%;
+    padding: 50px;
+    box-sizing: border-box;
+
+    /* Background */
+    background-image: url('images/background_index.png'); /* 1. Đặt ảnh nền */
+    background-size: cover; /* 2. Lấp đầy khung */
+    background-position: center; /* 3. Căn giữa ảnh */
+    background-repeat: no-repeat; /* 4. Không lặp lại ảnh */
+    display: flex;
+    flex-direction: column; /* Xếp các mục theo chiều dọc */ 
+    padding-top: 100px;
+    align-items: flex-start; /* Căn các mục con về bên trái */
+}
+
+
+.portfolio-image {
+    width: 40%
+}
+
+/* Chỉnh về phần các title */
+/* Dòng "PERSONAL" */
+.title-group h1:first-child {
+    font-family: serif;
+    color: #d9534f;
+    font-size: 80px; /* Đặt kích thước 45px như bạn yêu cầu */
+    margin: 10px 0;
+    line-height: 1;
+}
+
+/* Dòng "PORFOLIO" */
+.title-group h1:last-child {
+    font-family: serif;
+    color: #d9534f;
+    font-size: 125px; /* Đặt kích thước 70px như bạn yêu cầu */
+    margin: 10px 0;
+    line-height: 1;
+}
+.subtitle { /* Dòng Data Science */
+    font-family: Arial;
+    color: #d9534f;
+    font-size: 65px;
+    margin-top: 120px;
+    margin-bottom: 0;
+    margin-left: 240px;
+}
+
+.main-name{ /* Tên*/
+    color: #333;
+    font-size: 80px;
+    margin: 10px 0;
+    margin-left: 180px;
+}
+.cta-button{
+    display: inline-block; /* Để áp dụng padding */
+    background-color: white;
+    color: #75B2CE;
+    padding: 20px 25px;
+    font-size: 30px;
+    /*text-decoration: none;  Gạch chân bỏ */ 
+    font-weight: bold;
+    border-radius: 50px; /* Bo tròn góc */
+    margin-top: 20px;
+    margin-left: 260px;
+}
+
+/* Định dạng phần ảnh bên phải */
+.portfolio-image {
+    background-image: url('images/avatar.jpg');
+    background-size: cover;
+    background-position: center;
+}
